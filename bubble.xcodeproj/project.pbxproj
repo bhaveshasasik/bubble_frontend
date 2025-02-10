@@ -6,6 +6,16 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		E84BBE042D5AB573007F61F3 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84BBE032D5AB573007F61F3 /* MainView.swift */; };
+		E84BBE082D5AB5B5007F61F3 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84BBE072D5AB5B5007F61F3 /* OnboardingView.swift */; };
+		E84BBE102D5AB5F1007F61F3 /* SigninView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84BBE0F2D5AB5F1007F61F3 /* SigninView.swift */; };
+		E84BBE142D5AB606007F61F3 /* PrimaryButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84BBE132D5AB606007F61F3 /* PrimaryButtonStyle.swift */; };
+		E84BBE182D5AB6DC007F61F3 /* OnboardingPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84BBE172D5AB6DC007F61F3 /* OnboardingPage.swift */; };
+		E84BBE1A2D5AB79F007F61F3 /* Color+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84BBE192D5AB79F007F61F3 /* Color+Hex.swift */; };
+		E84BBE202D5AB811007F61F3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84BBE1F2D5AB811007F61F3 /* ContentView.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		E84BBDE42D5494A4007F61F3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -27,32 +37,18 @@
 		E84BBDD22D5494A0007F61F3 /* bubble.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = bubble.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E84BBDE32D5494A4007F61F3 /* bubbleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = bubbleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E84BBDED2D5494A4007F61F3 /* bubbleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = bubbleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E84BBE032D5AB573007F61F3 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		E84BBE072D5AB5B5007F61F3 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		E84BBE0F2D5AB5F1007F61F3 /* SigninView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninView.swift; sourceTree = "<group>"; };
+		E84BBE132D5AB606007F61F3 /* PrimaryButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButtonStyle.swift; sourceTree = "<group>"; };
+		E84BBE172D5AB6DC007F61F3 /* OnboardingPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPage.swift; sourceTree = "<group>"; };
+		E84BBE192D5AB79F007F61F3 /* Color+Hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Hex.swift"; sourceTree = "<group>"; };
+		E84BBE1F2D5AB811007F61F3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		E84BBE092D5AB5B8007F61F3 /* Exceptions for "bubble" folder in "bubble" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				OnboardingView.swift,
-			);
-			target = E84BBDD12D5494A0007F61F3 /* bubble */;
-		};
-		E84BBE0A2D5AB5B8007F61F3 /* Exceptions for "bubble" folder in "bubbleTests" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				OnboardingView.swift,
-			);
-			target = E84BBDE22D5494A4007F61F3 /* bubbleTests */;
-		};
-/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		E84BBDD42D5494A0007F61F3 /* bubble */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				E84BBE092D5AB5B8007F61F3 /* Exceptions for "bubble" folder in "bubble" target */,
-				E84BBE0A2D5AB5B8007F61F3 /* Exceptions for "bubble" folder in "bubbleTests" target */,
-			);
 			path = bubble;
 			sourceTree = "<group>";
 		};
@@ -96,7 +92,8 @@
 		E84BBDC92D5494A0007F61F3 = {
 			isa = PBXGroup;
 			children = (
-				E84BBE242D5AB8FA007F61F3 /* New Group */,
+				E84BBE262D5AB9CE007F61F3 /* Utilities */,
+				E84BBE252D5AB974007F61F3 /* Views */,
 				E84BBDD42D5494A0007F61F3 /* bubble */,
 				E84BBDE62D5494A4007F61F3 /* bubbleTests */,
 				E84BBDF02D5494A4007F61F3 /* bubbleUITests */,
@@ -114,11 +111,25 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		E84BBE242D5AB8FA007F61F3 /* New Group */ = {
+		E84BBE252D5AB974007F61F3 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				E84BBE032D5AB573007F61F3 /* MainView.swift */,
+				E84BBE172D5AB6DC007F61F3 /* OnboardingPage.swift */,
+				E84BBE072D5AB5B5007F61F3 /* OnboardingView.swift */,
+				E84BBE0F2D5AB5F1007F61F3 /* SigninView.swift */,
+				E84BBE1F2D5AB811007F61F3 /* ContentView.swift */,
 			);
-			path = "New Group";
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E84BBE262D5AB9CE007F61F3 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				E84BBE192D5AB79F007F61F3 /* Color+Hex.swift */,
+				E84BBE132D5AB606007F61F3 /* PrimaryButtonStyle.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,6 +276,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E84BBE1A2D5AB79F007F61F3 /* Color+Hex.swift in Sources */,
+				E84BBE142D5AB606007F61F3 /* PrimaryButtonStyle.swift in Sources */,
+				E84BBE202D5AB811007F61F3 /* ContentView.swift in Sources */,
+				E84BBE042D5AB573007F61F3 /* MainView.swift in Sources */,
+				E84BBE102D5AB5F1007F61F3 /* SigninView.swift in Sources */,
+				E84BBE182D5AB6DC007F61F3 /* OnboardingPage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,6 +289,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E84BBE082D5AB5B5007F61F3 /* OnboardingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
