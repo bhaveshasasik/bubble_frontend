@@ -29,9 +29,30 @@
 		E84BBDED2D5494A4007F61F3 /* bubbleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = bubbleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		E84BBE092D5AB5B8007F61F3 /* Exceptions for "bubble" folder in "bubble" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				OnboardingView.swift,
+			);
+			target = E84BBDD12D5494A0007F61F3 /* bubble */;
+		};
+		E84BBE0A2D5AB5B8007F61F3 /* Exceptions for "bubble" folder in "bubbleTests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				OnboardingView.swift,
+			);
+			target = E84BBDE22D5494A4007F61F3 /* bubbleTests */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		E84BBDD42D5494A0007F61F3 /* bubble */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				E84BBE092D5AB5B8007F61F3 /* Exceptions for "bubble" folder in "bubble" target */,
+				E84BBE0A2D5AB5B8007F61F3 /* Exceptions for "bubble" folder in "bubbleTests" target */,
+			);
 			path = bubble;
 			sourceTree = "<group>";
 		};
@@ -75,6 +96,7 @@
 		E84BBDC92D5494A0007F61F3 = {
 			isa = PBXGroup;
 			children = (
+				E84BBE242D5AB8FA007F61F3 /* New Group */,
 				E84BBDD42D5494A0007F61F3 /* bubble */,
 				E84BBDE62D5494A4007F61F3 /* bubbleTests */,
 				E84BBDF02D5494A4007F61F3 /* bubbleUITests */,
@@ -90,6 +112,13 @@
 				E84BBDED2D5494A4007F61F3 /* bubbleUITests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		E84BBE242D5AB8FA007F61F3 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
