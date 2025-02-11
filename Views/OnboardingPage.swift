@@ -75,6 +75,7 @@ struct OnboardingPage: View {
                     }
                 }
                 .buttonStyle(PrimaryButtonStyle(backgroundColor: Color(hex: "4A55A2"), textColor: Color.white))
+                .padding(.bottom, 16)
             }
             
             if showSignUpButton {
@@ -84,8 +85,11 @@ struct OnboardingPage: View {
                     }
                 }
                 .buttonStyle(PrimaryButtonStyle(backgroundColor: Color(hex: "4A55A2"), textColor: Color.white))
+                .padding(.bottom, 16)
+
             }
         }
-        .padding(.bottom, 50)
+        .padding(.horizontal, 24)
+        .padding(.vertical, 32)
     }
 }

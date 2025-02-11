@@ -16,12 +16,12 @@ struct SignInView: View {
             Image("background")
                 .resizable()
                 .aspectRatio(contentMode: .fill)
-                .edgesIgnoringSafeArea(.all)
-            
-            // Semi-transparent overlay
-            Color.black.opacity(0.3)
-                .edgesIgnoringSafeArea(.all)
-            
+                .frame(maxWidth: UIScreen.main.bounds.width, maxHeight: UIScreen.main.bounds.height)
+                .ignoresSafeArea()
+                .overlay(
+                    Color.black.opacity(0.3)
+                        .ignoresSafeArea(.all)
+                )
             VStack(spacing: 16) {
                 Spacer()
                 
@@ -44,7 +44,7 @@ struct SignInView: View {
                     // Handle Apple sign in
                     isOnboarding = false
                 }
-                .buttonStyle(PrimaryButtonStyle(backgroundColor: Color.black, textColor: Color.white))
+                .buttonStyle(PrimaryButtonStyle(backgroundColor: Color.black, textColor: Color.black))
 
                 Button("Sign in with Facebook") {
                     // Handle Facebook sign in
