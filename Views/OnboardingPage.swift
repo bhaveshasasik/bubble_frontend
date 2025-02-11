@@ -15,7 +15,27 @@ struct OnboardingPage: View {
     var showContinueButton = false
     var showSignUpButton = false
     @Binding var currentPage: Int
-    @Binding var isOnboarding: Bool = .constant(true)  // Default value for pages that don't need it
+    @Binding var isOnboarding: Bool
+    
+    
+    init(title: String,
+             subtitle: String? = nil,
+             description: String? = nil,
+             imageName: String? = nil,
+             showContinueButton: Bool = false,
+             showSignUpButton: Bool = false,
+             currentPage: Binding<Int>,
+             isOnboarding: Binding<Bool> = .constant(true)) {
+            self.title = title
+            self.subtitle = subtitle
+            self.description = description
+            self.imageName = imageName
+            self.showContinueButton = showContinueButton
+            self.showSignUpButton = showSignUpButton
+            self._currentPage = currentPage
+            self._isOnboarding = isOnboarding
+    }
+
     
     var body: some View {
         VStack(spacing: 20) {
@@ -54,7 +74,7 @@ struct OnboardingPage: View {
                         currentPage += 1
                     }
                 }
-                .buttonStyle(PrimaryButtonStyle(backgroundColor: Color(hex: "4A55A2")))
+                .buttonStyle(PrimaryButtonStyle(backgroundColor: Color(hex: "4A55A2"), textColor: Color.white))
             }
             
             if showSignUpButton {
@@ -63,7 +83,7 @@ struct OnboardingPage: View {
                         isOnboarding = false
                     }
                 }
-                .buttonStyle(PrimaryButtonStyle(backgroundColor: Color(hex: "4A55A2")))
+                .buttonStyle(PrimaryButtonStyle(backgroundColor: Color(hex: "4A55A2"), textColor: Color.white))
             }
         }
         .padding(.bottom, 50)

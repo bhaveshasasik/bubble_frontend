@@ -30,7 +30,7 @@ struct SignInView: View {
                     .fontWeight(.bold)
                     .foregroundColor(.white)
                 
-                Text("bubble")
+                Text("Bubble")
                     .font(.system(size: 48))
                     .fontWeight(.bold)
                     .foregroundColor(.white)
@@ -44,19 +44,19 @@ struct SignInView: View {
                     // Handle Apple sign in
                     isOnboarding = false
                 }
-                .buttonStyle(PrimaryButtonStyle(backgroundColor: .white))
-                
+                .buttonStyle(PrimaryButtonStyle(backgroundColor: Color.black, textColor: Color.white))
+
                 Button("Sign in with Facebook") {
                     // Handle Facebook sign in
                     isOnboarding = false
                 }
-                .buttonStyle(PrimaryButtonStyle(backgroundColor: Color(hex: "4A55A2")))
+                .buttonStyle(PrimaryButtonStyle(backgroundColor: Color(hex: "4A55A2"), textColor: Color.black))
                 
                 Button("Sign in with Phone Number") {
                     // Handle phone number sign in
                     isOnboarding = false
                 }
-                .buttonStyle(PrimaryButtonStyle(backgroundColor: Color(hex: "CD7F32")))
+                .buttonStyle(PrimaryButtonStyle(backgroundColor: Color(hex: "CD7F32"), textColor: Color.black))
                 
                 Text("By signing up to The Bubble, you agree to our Terms of Service, Learn how we process your data in our Privacy Policy and our Cookies Policy.")
                     .font(.caption)

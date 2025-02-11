@@ -1,10 +1,3 @@
-//
-//  OnboardingView.swift
-//  bubbleTests
-//
-//  Created by Bhavesh Sasikumar on 2/10/25.
-//
-
 import SwiftUI
 
 struct OnboardingView: View {
@@ -21,25 +14,28 @@ struct OnboardingView: View {
                 subtitle: "The app\ndesigned for...",
                 imageName: "bubble-logo",
                 showContinueButton: true,
-                currentPage: $currentPage
+                currentPage: $currentPage,
+                isOnboarding: $isOnboarding
             )
-                .tag(1)
+            .tag(1)
             
             OnboardingPage(
                 title: "Meeting New\nPeople Safely,",
                 description: "Meeting new people doesn't have to feel risky. Group dating offers peace of mind with friends around to support and look out for you.",
                 showContinueButton: true,
-                currentPage: $currentPage
+                currentPage: $currentPage,
+                isOnboarding: $isOnboarding
             )
-                .tag(2)
+            .tag(2)
             
             OnboardingPage(
                 title: "Enjoyable\nDating,",
                 description: "Dating should be enjoyable, not awkward. That's why we make every interaction group-centric. With your friends by your side, every outing turns into a shared adventure.",
                 showContinueButton: true,
-                currentPage: $currentPage
+                currentPage: $currentPage,
+                isOnboarding: $isOnboarding
             )
-                .tag(3)
+            .tag(3)
             
             OnboardingPage(
                 title: "& Unforgettable\nMemories.",
@@ -48,10 +44,11 @@ struct OnboardingView: View {
                 currentPage: $currentPage,
                 isOnboarding: $isOnboarding
             )
-                .tag(4)
+            .tag(4)
         }
+        #if os(iOS)
         .tabViewStyle(.page)
         .indexViewStyle(.page(backgroundDisplayMode: .never))
+        #endif
     }
 }
-
