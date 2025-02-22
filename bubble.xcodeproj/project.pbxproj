@@ -24,9 +24,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		E84BBDD22D5494A0007F61F3 /* bubble.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = bubble.app; path = /Users/bhaveshsasikumar/Desktop/bubble/build/Debug/bubble.app; sourceTree = "<absolute>"; };
-		E84BBDE32D5494A4007F61F3 /* bubbleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = bubbleTests.xctest; path = /Users/bhaveshsasikumar/Desktop/bubble/build/Debug/bubble.app/Contents/PlugIns/bubbleTests.xctest; sourceTree = "<absolute>"; };
-		E84BBDED2D5494A4007F61F3 /* bubbleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = bubbleUITests.xctest; path = "/Users/bhaveshsasikumar/Desktop/bubble/build/Debug/bubbleUITests-Runner.app/Contents/PlugIns/bubbleUITests.xctest"; sourceTree = "<absolute>"; };
+		AA90D3B42D68ED9300FC8266 /* bubble.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = bubble.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA90D3B52D68ED9300FC8266 /* bubbleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = bubbleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA90D3B62D68ED9300FC8266 /* bubbleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = bubbleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -96,6 +96,9 @@
 				E84BBDE62D5494A4007F61F3 /* bubbleTests */,
 				E84BBDF02D5494A4007F61F3 /* bubbleUITests */,
 				E84BBE342D5ABF6F007F61F3 /* Utilities */,
+				AA90D3B42D68ED9300FC8266 /* bubble.app */,
+				AA90D3B52D68ED9300FC8266 /* bubbleTests.xctest */,
+				AA90D3B62D68ED9300FC8266 /* bubbleUITests.xctest */,
 			);
 			sourceTree = "<group>";
 		};
@@ -124,7 +127,7 @@
 			packageProductDependencies = (
 			);
 			productName = bubble;
-			productReference = E84BBDD22D5494A0007F61F3 /* bubble.app */;
+			productReference = AA90D3B42D68ED9300FC8266 /* bubble.app */;
 			productType = "com.apple.product-type.application";
 		};
 		E84BBDE22D5494A4007F61F3 /* bubbleTests */ = {
@@ -147,7 +150,7 @@
 			packageProductDependencies = (
 			);
 			productName = bubbleTests;
-			productReference = E84BBDE32D5494A4007F61F3 /* bubbleTests.xctest */;
+			productReference = AA90D3B52D68ED9300FC8266 /* bubbleTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		E84BBDEC2D5494A4007F61F3 /* bubbleUITests */ = {
@@ -170,7 +173,7 @@
 			packageProductDependencies = (
 			);
 			productName = bubbleUITests;
-			productReference = E84BBDED2D5494A4007F61F3 /* bubbleUITests.xctest */;
+			productReference = AA90D3B62D68ED9300FC8266 /* bubbleUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */

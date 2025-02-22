@@ -16,24 +16,26 @@ struct OnboardingPage: View {
     var showSignUpButton = false
     @Binding var currentPage: Int
     @Binding var isOnboarding: Bool
-    
+    var onSignUp: (() -> Void)? = nil
     
     init(title: String,
-             subtitle: String? = nil,
-             description: String? = nil,
-             imageName: String? = nil,
-             showContinueButton: Bool = false,
-             showSignUpButton: Bool = false,
-             currentPage: Binding<Int>,
-             isOnboarding: Binding<Bool> = .constant(true)) {
-            self.title = title
-            self.subtitle = subtitle
-            self.description = description
-            self.imageName = imageName
-            self.showContinueButton = showContinueButton
-            self.showSignUpButton = showSignUpButton
-            self._currentPage = currentPage
-            self._isOnboarding = isOnboarding
+         subtitle: String? = nil,
+         description: String? = nil,
+         imageName: String? = nil,
+         showContinueButton: Bool = false,
+         showSignUpButton: Bool = false,
+         currentPage: Binding<Int>,
+         isOnboarding: Binding<Bool> = .constant(true),
+         onSignUp: (() -> Void)? = nil) {
+        self.title = title
+        self.subtitle = subtitle
+        self.description = description
+        self.imageName = imageName
+        self.showContinueButton = showContinueButton
+        self.showSignUpButton = showSignUpButton
+        self._currentPage = currentPage
+        self._isOnboarding = isOnboarding
+        self.onSignUp = onSignUp  // Store the closure
     }
 
     
@@ -80,9 +82,7 @@ struct OnboardingPage: View {
             
             if showSignUpButton {
                 Button("Sign up") {
-                    withAnimation {
-                        isOnboarding = false
-                    }
+                    onSignUp?()
                 }
                 .buttonStyle(PrimaryButtonStyle(backgroundColor: Color(hex: "4A55A2"), textColor: Color.white))
                 .padding(.bottom, 16)

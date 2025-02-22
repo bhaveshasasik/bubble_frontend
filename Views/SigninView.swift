@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import UIKit
 
 struct SignInView: View {
     @Binding var isOnboarding: Bool
