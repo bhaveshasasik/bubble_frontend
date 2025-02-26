@@ -1,0 +1,40 @@
+{
+  "" : {
+    "const-values" : "/Users/bhaveshsasikumar/Desktop/bubble_frontend/build/Pods.build/Release-iphoneos/GoogleSignInSwift.build/Objects-normal/arm64/GoogleSignInSwift-master.swiftconstvalues",
+    "dependencies" : "/Users/bhaveshsasikumar/Desktop/bubble_frontend/build/Pods.build/Release-iphoneos/GoogleSignInSwift.build/Objects-normal/arm64/GoogleSignInSwift-master.d",
+    "diagnostics" : "/Users/bhaveshsasikumar/Desktop/bubble_frontend/build/Pods.build/Release-iphoneos/GoogleSignInSwift.build/Objects-normal/arm64/GoogleSignInSwift-master.dia",
+    "emit-module-dependencies" : "/Users/bhaveshsasikumar/Desktop/bubble_frontend/build/Pods.build/Release-iphoneos/GoogleSignInSwift.build/Objects-normal/arm64/GoogleSignInSwift-master-emit-module.d",
+    "emit-module-diagnostics" : "/Users/bhaveshsasikumar/Desktop/bubble_frontend/build/Pods.build/Release-iphoneos/GoogleSignInSwift.build/Objects-normal/arm64/GoogleSignInSwift-master-emit-module.dia",
+    "swift-dependencies" : "/Users/bhaveshsasikumar/Desktop/bubble_frontend/build/Pods.build/Release-iphoneos/GoogleSignInSwift.build/Objects-normal/arm64/GoogleSignInSwift-master.swiftdeps"
+  },
+  "/Users/bhaveshsasikumar/Desktop/bubble_frontend/Pods/GoogleSignInSwift/GoogleSignInSwift/Classes/API.swift" : {
+    "index-unit-output-path" : "/Pods.build/Release-iphoneos/GoogleSignInSwift.build/Objects-normal/arm64/API.o",
+    "llvm-bc" : "/Users/bhaveshsasikumar/Desktop/bubble_frontend/build/Pods.build/Release-iphoneos/GoogleSignInSwift.build/Objects-normal/arm64/API.bc",
+    "object" : "/Users/bhaveshsasikumar/Desktop/bubble_frontend/build/Pods.build/Release-iphoneos/GoogleSignInSwift.build/Objects-normal/arm64/API.o"
+  },
+  "/Users/bhaveshsasikumar/Desktop/bubble_frontend/Pods/GoogleSignInSwift/GoogleSignInSwift/Classes/Auth.swift" : {
+    "index-unit-output-path" : "/Pods.build/Release-iphoneos/GoogleSignInSwift.build/Objects-normal/arm64/Auth.o",
+    "llvm-bc" : "/Users/bhaveshsasikumar/Desktop/bubble_frontend/build/Pods.build/Release-iphoneos/GoogleSignInSwift.build/Objects-normal/arm64/Auth.bc",
+    "object" : "/Users/bhaveshsasikumar/Desktop/bubble_frontend/build/Pods.build/Release-iphoneos/GoogleSignInSwift.build/Objects-normal/arm64/Auth.o"
+  },
+  "/Users/bhaveshsasikumar/Desktop/bubble_frontend/Pods/GoogleSignInSwift/GoogleSignInSwift/Classes/GoogleSignIn.swift" : {
+    "index-unit-output-path" : "/Pods.build/Release-iphoneos/GoogleSignInSwift.build/Objects-normal/arm64/GoogleSignIn.o",
+    "llvm-bc" : "/Users/bhaveshsasikumar/Desktop/bubble_frontend/build/Pods.build/Release-iphoneos/GoogleSignInSwift.build/Objects-normal/arm64/GoogleSignIn.bc",
+    "object" : "/Users/bhaveshsasikumar/Desktop/bubble_frontend/build/Pods.build/Release-iphoneos/GoogleSignInSwift.build/Objects-normal/arm64/GoogleSignIn.o"
+  },
+  "/Users/bhaveshsasikumar/Desktop/bubble_frontend/Pods/GoogleSignInSwift/GoogleSignInSwift/Classes/Request.swift" : {
+    "index-unit-output-path" : "/Pods.build/Release-iphoneos/GoogleSignInSwift.build/Objects-normal/arm64/Request.o",
+    "llvm-bc" : "/Users/bhaveshsasikumar/Desktop/bubble_frontend/build/Pods.build/Release-iphoneos/GoogleSignInSwift.build/Objects-normal/arm64/Request.bc",
+    "object" : "/Users/bhaveshsasikumar/Desktop/bubble_frontend/build/Pods.build/Release-iphoneos/GoogleSignInSwift.build/Objects-normal/arm64/Request.o"
+  },
+  "/Users/bhaveshsasikumar/Desktop/bubble_frontend/Pods/GoogleSignInSwift/GoogleSignInSwift/Classes/Storage.swift" : {
+    "index-unit-output-path" : "/Pods.build/Release-iphoneos/GoogleSignInSwift.build/Objects-normal/arm64/Storage.o",
+    "llvm-bc" : "/Users/bhaveshsasikumar/Desktop/bubble_frontend/build/Pods.build/Release-iphoneos/GoogleSignInSwift.build/Objects-normal/arm64/Storage.bc",
+    "object" : "/Users/bhaveshsasikumar/Desktop/bubble_frontend/build/Pods.build/Release-iphoneos/GoogleSignInSwift.build/Objects-normal/arm64/Storage.o"
+  },
+  "/Users/bhaveshsasikumar/Desktop/bubble_frontend/Pods/GoogleSignInSwift/GoogleSignInSwift/Classes/User.swift" : {
+    "index-unit-output-path" : "/Pods.build/Release-iphoneos/GoogleSignInSwift.build/Objects-normal/arm64/User.o",
+    "llvm-bc" : "/Users/bhaveshsasikumar/Desktop/bubble_frontend/build/Pods.build/Release-iphoneos/GoogleSignInSwift.build/Objects-normal/arm64/User.bc",
+    "object" : "/Users/bhaveshsasikumar/Desktop/bubble_frontend/build/Pods.build/Release-iphoneos/GoogleSignInSwift.build/Objects-normal/arm64/User.o"
+  }
+}

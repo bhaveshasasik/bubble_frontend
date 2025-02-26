@@ -7,9 +7,14 @@
 
 import SwiftUI
 import UIKit
+import AuthenticationServices
 
 struct SignInView: View {
     @Binding var isOnboarding: Bool
+    @EnvironmentObject var viewModel: AuthViewModel
+    @State private var showingPathAuth = false
+    @Environment(\.colorScheme) var colorScheme
+    
     
     var body: some View {
         ZStack {
@@ -41,23 +46,66 @@ struct SignInView: View {
                     .foregroundColor(.white)
                     .padding(.bottom, 40)
                 
-                Button("Sign in with Apple") {
-                    // Handle Apple sign in
-                    isOnboarding = false
+                //sign in view with apple
+                SignInWithAppleButton { request in
+                    viewModel.handleSignInWithAppleRequest(request)
+                } onCompletion: { result in
+                    viewModel.handleSignInwithAppleCompletion(result)
                 }
-                .buttonStyle(PrimaryButtonStyle(backgroundColor: Color.black, textColor: Color.black))
-
-                Button("Sign in with Facebook") {
-                    // Handle Facebook sign in
-                    isOnboarding = false
-                }
-                .buttonStyle(PrimaryButtonStyle(backgroundColor: Color(hex: "4A55A2"), textColor: Color.black))
+                .signInWithAppleButtonStyle(colorScheme == .light ? .black : .white)
+                .frame(width: 300, height: 50)
+                .cornerRadius(8)
                 
-                Button("Sign in with Phone Number") {
-                    // Handle phone number sign in
-                    isOnboarding = false
+                //sign in view with google
+                Button(action: {
+                    Task {
+                        await viewModel.signInWithGoogle()
+                    }
+                }) {
+                    HStack {
+                        Image("Google")
+                            .resizable()
+                            .scaledToFit()
+                            .frame(width: 20, height: 20)
+                            .padding(.leading, 8)
+                        
+                        Text("Sign in with Google")
+                            .font(.system(size: 18))
+                            .fontWeight(.semibold)
+                            .foregroundColor(.black) // Ensure text is black for contrast
+                            .padding(.trailing, 8)
+                    }
+                    .frame(width: 295, height: 45) // Adjust width to match design
+                    .background(Color.white) // Make full button white
+                    .cornerRadius(8)
+                    .overlay(
+                        RoundedRectangle(cornerRadius: 8)
+                            .stroke(Color.gray.opacity(0.5), lineWidth: 1) // Light gray border for definition
+                    )
                 }
-                .buttonStyle(PrimaryButtonStyle(backgroundColor: Color(hex: "CD7F32"), textColor: Color.black))
+                
+                
+                //sign in view for phone number
+                Button(action: {
+                    Task {
+                        {}
+                    }
+                }) {
+                    HStack {
+                        Text("Sign in with Phone")
+                            .font(.system(size: 18))
+                            .fontWeight(.semibold)
+                            .foregroundColor(.black) // Ensure text is black for contrast
+                            .padding(.trailing, 8)
+                    }
+                    .frame(width: 295, height: 45) // Adjust width to match design
+                    .background(Color.orange) // Make full button white
+                    .cornerRadius(8)
+                    .overlay(
+                        RoundedRectangle(cornerRadius: 8)
+                            .stroke(Color.gray.opacity(0.5), lineWidth: 1) // Light gray border for definition
+                    )
+                }
                 
                 Text("By signing up to The Bubble, you agree to our Terms of Service, Learn how we process your data in our Privacy Policy and our Cookies Policy.")
                     .font(.caption)

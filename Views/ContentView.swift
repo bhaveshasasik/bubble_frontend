@@ -10,6 +10,7 @@ import SwiftUI
 struct ContentView: View {
     @State private var isOnboarding = true
     
+    
     var body: some View {
         if isOnboarding {
             OnboardingView(isOnboarding: $isOnboarding)

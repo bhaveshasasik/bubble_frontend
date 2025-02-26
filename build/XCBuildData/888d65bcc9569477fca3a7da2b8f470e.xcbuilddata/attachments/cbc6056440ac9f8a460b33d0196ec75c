@@ -1,0 +1,5 @@
+ extern const unsigned char GoogleSignInSwiftVersionString[];
+ extern const double GoogleSignInSwiftVersionNumber;
+
+ const unsigned char GoogleSignInSwiftVersionString[] __attribute__ ((used)) = "@(#)PROGRAM:GoogleSignInSwift  PROJECT:Pods-1" "\n";
+ const double GoogleSignInSwiftVersionNumber __attribute__ ((used)) = (double)1.;

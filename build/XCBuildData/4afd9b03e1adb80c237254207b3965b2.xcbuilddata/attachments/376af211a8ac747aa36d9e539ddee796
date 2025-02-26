@@ -1,0 +1,5 @@
+ extern const unsigned char Pods_bubbleTestsVersionString[];
+ extern const double Pods_bubbleTestsVersionNumber;
+
+ const unsigned char Pods_bubbleTestsVersionString[] __attribute__ ((used)) = "@(#)PROGRAM:Pods_bubbleTests  PROJECT:Pods-1" "\n";
+ const double Pods_bubbleTestsVersionNumber __attribute__ ((used)) = (double)1.;
